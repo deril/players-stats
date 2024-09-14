@@ -5,7 +5,7 @@ class PlaythroughPresenter < ApplicationPresenter
     {
       id: playthrough.id,
       player_id: playthrough.player_id,
-      started_at: playthrough.started_at.iso8601,
+      timestamp: playthrough.timestamp.iso8601,
       score: playthrough.score,
       time_spent: playthrough.time_spent
     }

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   resources :players, only: [ :create ]
   resources :playthroughs, only: [ :create ]
+  resource :weekly_summary, only: [ :show ]
 end
