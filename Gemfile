@@ -47,6 +47,11 @@ group :development do
   gem "rubocop-performance"
   gem "rubocop-rspec"
   gem "rubocop-rspec_rails"
+  gem "rubocop-factory_bot"
+end
+
+group :test do
+  gem "factory_bot_rails"
 end
 
 gem "json-schema", "~> 5.0"

@@ -118,6 +118,11 @@ GEM
       dry-logic (~> 1.4)
       zeitwerk (~> 2.6)
     erubi (1.13.0)
+    factory_bot (6.5.0)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.4.3)
+      factory_bot (~> 6.4)
+      railties (>= 5.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.5)
@@ -248,6 +253,8 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.32.3)
       parser (>= 3.3.1.0)
+    rubocop-factory_bot (2.26.1)
+      rubocop (~> 1.61)
     rubocop-minitest (0.36.0)
       rubocop (>= 1.61, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
@@ -315,11 +322,13 @@ DEPENDENCIES
   brakeman
   debug
   dry-schema (~> 1.13)
+  factory_bot_rails
   json-schema (~> 5.0)
   puma (>= 5.0)
   rails (~> 7.2.1)
   rspec-rails (~> 7.0)
   rubocop
+  rubocop-factory_bot
   rubocop-performance
   rubocop-rails-omakase
   rubocop-rspec
