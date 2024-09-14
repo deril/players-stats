@@ -19,7 +19,7 @@ RSpec.describe "Players API" do
       end.not_to change(Player, :count)
 
       expect(response).to have_http_status(:unprocessable_entity)
-      expect(response_body["name"]).to include("can't be blank")
+      expect(response.body).to match_json_schema(ErrorSchema.json_schema)
     end
   end
 end
