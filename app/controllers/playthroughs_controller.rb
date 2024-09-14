@@ -13,6 +13,6 @@ class PlaythroughsController < ApplicationController
   private
 
   def playthrough_params
-    params.require(:playthrough).permit(:player_id, :started_at, :score, :time_spent)
+    @validated_params[:playthrough]
   end
 end

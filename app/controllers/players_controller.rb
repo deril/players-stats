@@ -2,8 +2,6 @@
 
 class PlayersController < ApplicationController
   def create
-    return unless @validated_params
-
     player = Player.new(player_params)
     if player.save
       render json: PlayerPresenter.new(player:), status: :created

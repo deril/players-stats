@@ -11,6 +11,7 @@ class ApplicationController < ActionController::API
       @validated_params = result.to_h
     else
       render json: { errors: result.errors }, status: :unprocessable_entity
+      false
     end
   end
 end

@@ -6,7 +6,7 @@ RSpec.describe "Players API" do
   describe "POST /players" do
     it "creates a player" do
       expect do
-        post "/players", params: { player: { name: "John Doe" } }
+        post_json "/players", { player: { name: "John Doe" } }
       end.to change(Player, :count).by(1)
 
       expect(response).to have_http_status(:created)
@@ -15,7 +15,7 @@ RSpec.describe "Players API" do
 
     it "returns an error when player is invalid" do
       expect do
-        post "/players", params: { player: { name: "" } }
+        post_json "/players", { player: { name: "" } }
       end.not_to change(Player, :count)
 
       expect(response).to have_http_status(:unprocessable_entity)

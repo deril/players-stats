@@ -7,8 +7,8 @@ ErrorSchema = Dry::Schema.JSON do
     required(:text).filled(:str?)
     required(:path).array(:str?)
     required(:predicate).filled(:str?)
-    required(:args).array(:str?)
-    required(:input).value(:str?)
+    required(:args) { array(:str?) | array(:int?) }
+    required(:input) { str? | int? }
     required(:meta).value(:hash)
   end
 end
