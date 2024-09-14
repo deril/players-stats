@@ -29,5 +29,6 @@ module PlayersStats
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.weekly_summary_cache_ttl = 12.hours
+    config.impact_report_cache_ttl = 1.hour
   end
 end
