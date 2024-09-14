@@ -1,24 +1,14 @@
-# README
+# Weekly Summary and Impact Report Generator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project provides services to generate weekly summaries and impact reports for players based on their playthroughs. It is built with Ruby and uses Bundler for dependency management.
 
-Things you may want to cover:
+## Project Description
 
-* Ruby version
+The application includes two main services:
 
-* System dependencies
+1. **Weekly Summary Generator**: Generates a summary of players' activities for a given week, including total scores and time spent.
+2. **Impact Report Generator**: Generates a report showing the impact of players by calculating the difference between their best and first scores.
 
-* Configuration
+## Endpoints
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### [TODO]: Add endpoints
