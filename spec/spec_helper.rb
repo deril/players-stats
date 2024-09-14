@@ -19,7 +19,7 @@ RSpec.configure do |config|
   # assertions if you prefer.
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
-    # and `failure_message` of custom matchers include text for helper methods
+    # and `failure_message` of custom support include text for helper methods
     # defined using `chain`, e.g.:
     #     be_bigger_than(2).and_smaller_than(4).description
     #     # => "be bigger than 2 and smaller than 4"
@@ -91,4 +91,9 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  RSpec::Matchers.define :match_json_schema do |json_schema, validation_opts = {}|
+    match do |response|
+      JSON::Validator.fully_validate(json_schema, response, validation_opts).empty?
+    end
+  end
 end

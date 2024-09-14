@@ -41,3 +41,14 @@ group :development, :test do
 
   gem "rspec-rails", "~> 7.0"
 end
+
+group :development do
+  gem "rubocop"
+  gem "rubocop-performance"
+  gem "rubocop-rspec"
+  gem "rubocop-rspec_rails"
+end
+
+gem "json-schema", "~> 5.0"
+
+gem "dry-schema", "~> 1.13"
