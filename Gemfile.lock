@@ -132,8 +132,9 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.7.2)
-    json-schema (5.0.0)
+    json-schema (5.1.1)
       addressable (~> 2.8)
+      bigdecimal (~> 3.1)
     language_server-protocol (3.17.0.3)
     logger (1.6.1)
     loofah (2.22.0)
@@ -323,7 +324,7 @@ DEPENDENCIES
   debug
   dry-schema (~> 1.13)
   factory_bot_rails
-  json-schema (~> 5.0)
+  json-schema (~> 5.1)
   puma (>= 5.0)
   rails (~> 7.2.1)
   rspec-rails (~> 7.0)

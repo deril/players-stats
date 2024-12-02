@@ -54,6 +54,6 @@ group :test do
   gem "factory_bot_rails"
 end
 
-gem "json-schema", "~> 5.0"
+gem "json-schema", "~> 5.1"
 
 gem "dry-schema", "~> 1.13"
